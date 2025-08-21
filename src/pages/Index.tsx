@@ -6,7 +6,7 @@ import { ShadowFinderVisualization } from '@/components/ShadowFinderVisualizatio
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { MapPin, Zap } from 'lucide-react';
+import { MapPin, Zap, Send, Twitter, Github, Linkedin, Coffee } from 'lucide-react';
 import { 
   analyzeShadowMeasurements, 
   calculateMeasurementsFromPixels, 
@@ -278,20 +278,64 @@ const Index = () => {
                   <MapPin className="w-6 h-6 text-cyber-primary" />
                 </div>
                 <div>
-                  <h1 className="text-2xl font-bold bg-gradient-to-r from-cyber-primary to-cyber-secondary bg-clip-text text-transparent">
-                    ShadowTrace
-                  </h1>
+                  <div className="flex items-center gap-2">
+                    <h1 className="text-2xl font-bold bg-gradient-to-r from-cyber-primary to-cyber-secondary bg-clip-text text-transparent">
+                      ShadowTrace
+                    </h1>
+                    <Badge variant="outline" className="border-cyber-primary/30 text-cyber-primary">
+                      <Zap className="w-3 h-3 mr-1" />
+                      DEMO
+                    </Badge>
+                  </div>
                   <p className="text-sm text-muted-foreground">
                     OSINT Geolocation via Shadow Analysis
                   </p>
                 </div>
               </div>
               
+              {/* Social Links */}
               <div className="flex items-center gap-2">
-                <Badge variant="outline" className="border-cyber-primary/30 text-cyber-primary">
-                  <Zap className="w-3 h-3 mr-1" />
-                  DEMO
-                </Badge>
+                <a 
+                  href="https://t.me/hck4fun" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="p-2 hover:bg-muted rounded-lg transition-colors"
+                >
+                  <Send className="w-4 h-4 text-muted-foreground hover:text-primary" />
+                </a>
+                <a 
+                  href="https://twitter.com/hck4fun" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="p-2 hover:bg-muted rounded-lg transition-colors"
+                >
+                  <Twitter className="w-4 h-4 text-muted-foreground hover:text-primary" />
+                </a>
+                <a 
+                  href="https://github.com/bytemallet" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="p-2 hover:bg-muted rounded-lg transition-colors"
+                >
+                  <Github className="w-4 h-4 text-muted-foreground hover:text-primary" />
+                </a>
+                <a 
+                  href="https://linkedin.com/in/xaviermarrugat" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="p-2 hover:bg-muted rounded-lg transition-colors"
+                >
+                  <Linkedin className="w-4 h-4 text-muted-foreground hover:text-primary" />
+                </a>
+                <a 
+                  href="https://ko-fi.com/bytemallet" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-cyber-primary to-cyber-secondary text-xs font-medium rounded-lg hover:shadow-lg transition-all duration-200 text-primary-foreground"
+                >
+                  <Coffee className="w-3.5 h-3.5" />
+                  <span>Buy me a coffee &lt;3</span>
+                </a>
               </div>
             </div>
           </div>

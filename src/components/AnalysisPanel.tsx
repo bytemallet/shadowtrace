@@ -126,14 +126,6 @@ export const AnalysisPanel: React.FC<AnalysisPanelProps> = ({
           </div>
         </div>
 
-        {/* Analysis info */}
-        <div className="p-4 rounded-lg bg-muted/50 border border-border/50">
-          <div className="text-xs text-muted-foreground space-y-1">
-            <p>• Uses sun angle calculations based on shadow geometry</p>
-            <p>• Estimates location within ~1-10km radius</p>
-            <p>• Accuracy depends on image quality and shadow visibility</p>
-          </div>
-        </div>
 
         {/* Analyze button */}
         <Button
