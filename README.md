@@ -39,13 +39,6 @@ The application implements the proven ShadowFinder algorithm methodology, achiev
 - Transparent overlay design preserving geographic context
 - Ultra-precise yellow zones for highest probability matches
 
-### ⚡ **Professional Features**
-- UTC time parsing with automatic timezone handling
-- Real-time pixel-to-measurement conversion
-- SunCalc integration for precise solar position calculations
-- 290x720 global grid analysis (matching Bellingcat standards)
-- Responsive design optimized for professional workflows
-
 ## 🔬 How It Works
 
 ### The Science Behind Shadow Analysis
@@ -80,87 +73,6 @@ For each point on Earth's surface:
 4. **⚙️ Analysis**: Algorithm processes shadow geometry across global grid
 5. **🗺️ Visualization**: Results displayed on interactive world map
 6. **🎯 Optional Enhancement**: Add second photo for intersection analysis
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Node.js (v16 or higher)
-- npm or yarn package manager
-- Modern web browser with WebGL support
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/shadowtrace.git
-cd shadowtrace
-
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-```
-
-### Production Build
-
-```bash
-# Build for production
-npm run build
-
-# Preview production build
-npm run preview
-```
-
-## 🛠️ Technical Architecture
-
-### Core Technologies
-
-- **Frontend**: React 18 with TypeScript
-- **Visualization**: D3.js for geographic projections and mapping
-- **Solar Calculations**: SunCalc library for astronomical computations
-- **Styling**: Tailwind CSS with custom OSINT-themed design
-- **Build Tool**: Vite for fast development and optimized builds
-
-### Key Components
-
-- `ShadowFinderVisualization`: D3.js-powered geographic visualization engine
-- `InteractiveImage`: Precision point marking with percentage-based coordinates  
-- `AnalysisPanel`: UTC time parsing and measurement display
-- `shadowfinder.ts`: Core algorithm implementation with grid-based analysis
-
-### Algorithm Specifications
-
-- **Grid Resolution**: 0.5° angular resolution (290x720 global points)
-- **Coverage**: 60°S to 84.5°N latitude, full longitude range
-- **Precision**: Ultra-thin probability bands with likelihood thresholds
-- **Performance**: Optimized for real-time analysis of 200,000+ data points
-
-## 📊 Capabilities & Limitations
-
-### ✅ Optimal Conditions
-
-- **Clear shadows**: Well-defined, unobstructed shadow edges
-- **Vertical objects**: Poles, buildings, people, street signs
-- **Known timestamps**: Accurate date/time when photo was captured
-- **Daylight conditions**: Sun above horizon (shadows visible)
-- **Multiple photos**: Different timestamps from same location for intersection analysis
-
-### ⚠️ Limitations
-
-- **Night photography**: No shadows = no analysis possible
-- **Heavily overcast**: Diffused shadows reduce accuracy
-- **Indoor/underground**: Artificial lighting invalidates solar calculations
-- **Polar regions**: Extreme latitudes may have reduced accuracy during polar night/day
-- **Timestamp accuracy**: Incorrect time data leads to location errors
-
-### 🎯 Accuracy Expectations
-
-- **Single photo**: 1-10km radius accuracy (depending on conditions)
-- **Dual photo intersection**: Sub-kilometer accuracy achievable
-- **Professional use**: Comparable to commercial OSINT tools
-- **Educational use**: Excellent for demonstrating geolocation principles
 
 ## 📚 References & Methodology
 
@@ -208,23 +120,6 @@ This tool is designed for:
 - Obtain proper authorization before investigating sensitive locations
 - Consider ethical implications of geolocation capabilities
 - Follow responsible disclosure for security-related findings
-
-## 🤝 Contributing
-
-We welcome contributions from the OSINT and developer communities:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/enhancement`)
-3. Commit changes (`git commit -am 'Add new capability'`)
-4. Push to branch (`git push origin feature/enhancement`) 
-5. Open a Pull Request
-
-### Development Guidelines
-
-- Follow TypeScript best practices
-- Maintain test coverage for critical algorithms
-- Document new features and API changes
-- Respect existing code style and patterns
 
 ## 📄 License
 
