@@ -271,8 +271,81 @@ const Index = () => {
       <div className="relative z-10">
         {/* Header */}
         <header className="border-b border-border/50 bg-card/80 backdrop-blur-sm">
-          <div className="container mx-auto px-6 py-4">
-            <div className="flex items-center justify-between">
+          <div className="container mx-auto px-4 sm:px-6 py-4">
+            {/* Mobile Layout */}
+            <div className="flex flex-col gap-4 sm:hidden">
+              {/* Top row: Logo + Title + DEMO */}
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  <div className="p-2 rounded-lg bg-cyber-primary/10 cyber-glow">
+                    <MapPin className="w-6 h-6 text-cyber-primary" />
+                  </div>
+                  <div>
+                    <div className="flex items-center gap-2">
+                      <h1 className="text-xl font-bold bg-gradient-to-r from-cyber-primary to-cyber-secondary bg-clip-text text-transparent">
+                        ShadowTrace
+                      </h1>
+                      <Badge variant="outline" className="border-cyber-primary/30 text-cyber-primary text-xs">
+                        <Zap className="w-3 h-3 mr-1" />
+                        DEMO
+                      </Badge>
+                    </div>
+                    <p className="text-xs text-muted-foreground">
+                      OSINT Geolocation via Shadow Analysis
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Bottom row: Social Links */}
+              <div className="flex items-center justify-center gap-1">
+                <a 
+                  href="https://t.me/hck4fun" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="p-2 hover:bg-muted rounded-lg transition-colors"
+                >
+                  <Send className="w-4 h-4 text-muted-foreground hover:text-primary" />
+                </a>
+                <a 
+                  href="https://twitter.com/hck4fun" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="p-2 hover:bg-muted rounded-lg transition-colors"
+                >
+                  <Twitter className="w-4 h-4 text-muted-foreground hover:text-primary" />
+                </a>
+                <a 
+                  href="https://github.com/bytemallet" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="p-2 hover:bg-muted rounded-lg transition-colors"
+                >
+                  <Github className="w-4 h-4 text-muted-foreground hover:text-primary" />
+                </a>
+                <a 
+                  href="https://linkedin.com/in/xaviermarrugat" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="p-2 hover:bg-muted rounded-lg transition-colors"
+                >
+                  <Linkedin className="w-4 h-4 text-muted-foreground hover:text-primary" />
+                </a>
+                <a 
+                  href="https://ko-fi.com/bytemallet" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-cyber-primary to-cyber-secondary text-xs font-medium rounded-lg hover:shadow-lg transition-all duration-200 text-primary-foreground"
+                >
+                  <Coffee className="w-3.5 h-3.5" />
+                  <span className="hidden xs:inline">Buy me a coffee &lt;3</span>
+                  <span className="xs:hidden">Coffee &lt;3</span>
+                </a>
+              </div>
+            </div>
+
+            {/* Desktop Layout */}
+            <div className="hidden sm:flex items-center justify-between">
               <div className="flex items-center gap-3">
                 <div className="p-2 rounded-lg bg-cyber-primary/10 cyber-glow">
                   <MapPin className="w-6 h-6 text-cyber-primary" />
